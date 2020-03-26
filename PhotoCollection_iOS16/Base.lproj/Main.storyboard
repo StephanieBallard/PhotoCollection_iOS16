@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,12 +79,49 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="GCF-LL-Jc7">
                         <barButtonItem key="leftBarButtonItem" title="Select Theme" id="aXd-jS-ARX"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ch5-YH-M5h"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ch5-YH-M5h">
+                            <connections>
+                                <segue destination="bzs-T3-VmN" kind="show" identifier="addPhotoShowSegue" id="fA1-ok-imA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aoM-F6-zQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="979.71014492753636" y="131.91964285714286"/>
+        </scene>
+        <!--Photo Detail View Controller-->
+        <scene sceneID="ow2-Mu-YZf">
+            <objects>
+                <viewController id="bzs-T3-VmN" customClass="PhotoDetailViewController" customModule="PhotoCollection_iOS16" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7H-Pf-TS0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Sb-BN-onZ">
+                                <rect key="frame" x="87" y="145" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hK7-Vl-kME">
+                                <rect key="frame" x="171" y="304" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Photo"/>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fU4-yU-uUm">
+                                <rect key="frame" x="159" y="378" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="zlk-oW-4Vn"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ms2-yg-F3u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zA9-xw-baz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1763.7681159420292" y="131.91964285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TU1-lb-b9b">
