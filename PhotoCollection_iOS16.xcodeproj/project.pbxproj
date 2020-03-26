@@ -13,6 +13,7 @@
 		5AEA7E1B242D450800090633 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA7E19242D450800090633 /* Main.storyboard */; };
 		5AEA7E1D242D450A00090633 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA7E1C242D450A00090633 /* Assets.xcassets */; };
 		5AEA7E20242D450A00090633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA7E1E242D450A00090633 /* LaunchScreen.storyboard */; };
+		5AEA7E28242D462300090633 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA7E27242D462300090633 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5AEA7E1C242D450A00090633 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AEA7E1F242D450A00090633 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AEA7E21242D450A00090633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AEA7E27242D462300090633 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				5AEA7E15242D450800090633 /* SceneDelegate.swift */,
 				5AEA7E17242D450800090633 /* ViewController.swift */,
 				5AEA7E19242D450800090633 /* Main.storyboard */,
+				5AEA7E27242D462300090633 /* Photo.swift */,
 				5AEA7E1C242D450A00090633 /* Assets.xcassets */,
 				5AEA7E1E242D450A00090633 /* LaunchScreen.storyboard */,
 				5AEA7E21242D450A00090633 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AEA7E28242D462300090633 /* Photo.swift in Sources */,
 				5AEA7E18242D450800090633 /* ViewController.swift in Sources */,
 				5AEA7E14242D450800090633 /* AppDelegate.swift in Sources */,
 				5AEA7E16242D450800090633 /* SceneDelegate.swift in Sources */,
