@@ -9,7 +9,9 @@
 import UIKit
 
 class PhotoDetailViewController: UIViewController {
-
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textField: UITextField!
+    
     var photoController: PhotoController?
     var photo: Photo?
     var themeHelper: ThemeHelper?
@@ -20,7 +22,12 @@ class PhotoDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func addPhotoButton(_ sender: UIButton) {
+    }
+    
+    @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+    }
+    
     /*
     // MARK: - Navigation
 
