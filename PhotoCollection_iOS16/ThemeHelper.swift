@@ -13,11 +13,22 @@ extension String {
 }
 
 class ThemeHelper {
+    
+    init() {
+        if themePreference == nil {
+            setThemePreferenceToDark()
+        }
+    }
+    
     func setThemePreferenceToDark() {
         UserDefaults.standard.set("Dark", forKey: .themePreferenceKey)
     }
     
     func setThemePreferenceToPink() {
         UserDefaults.standard.set("Pink", forKey: .themePreferenceKey)
+    }
+    
+    var themePreference: String? {
+        return UserDefaults.standard.string(forKey: .themePreferenceKey)
     }
 }
