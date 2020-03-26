@@ -15,6 +15,7 @@
 		5AEA7E20242D450A00090633 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AEA7E1E242D450A00090633 /* LaunchScreen.storyboard */; };
 		5AEA7E28242D462300090633 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA7E27242D462300090633 /* Photo.swift */; };
 		5AEA7E2A242D467800090633 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA7E29242D467800090633 /* PhotoController.swift */; };
+		5AEA7E2C242D4C5100090633 /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA7E2B242D4C5100090633 /* ThemeHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5AEA7E21242D450A00090633 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AEA7E27242D462300090633 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		5AEA7E29242D467800090633 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
+		5AEA7E2B242D4C5100090633 /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				5AEA7E19242D450800090633 /* Main.storyboard */,
 				5AEA7E27242D462300090633 /* Photo.swift */,
 				5AEA7E29242D467800090633 /* PhotoController.swift */,
+				5AEA7E2B242D4C5100090633 /* ThemeHelper.swift */,
 				5AEA7E1C242D450A00090633 /* Assets.xcassets */,
 				5AEA7E1E242D450A00090633 /* LaunchScreen.storyboard */,
 				5AEA7E21242D450A00090633 /* Info.plist */,
@@ -147,6 +150,7 @@
 				5AEA7E2A242D467800090633 /* PhotoController.swift in Sources */,
 				5AEA7E28242D462300090633 /* Photo.swift in Sources */,
 				5AEA7E18242D450800090633 /* ViewController.swift in Sources */,
+				5AEA7E2C242D4C5100090633 /* ThemeHelper.swift in Sources */,
 				5AEA7E14242D450800090633 /* AppDelegate.swift in Sources */,
 				5AEA7E16242D450800090633 /* SceneDelegate.swift in Sources */,
 			);
