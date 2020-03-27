@@ -18,16 +18,26 @@ class PhotosCollectionViewController: UICollectionViewController {
         setTheme()
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        switch segue.identifier {
+        case "addPhotoShowSegue":
+            guard let destintationViewController = segue.destination as? PhotoDetailViewController else { return }
+            destintationViewController.photoController = photoController
+            destintationViewController.themeHelper = themeHelper
+        case "photoCellShowSegue":
+            guard let destinationViewController = segue.destination as? PhotoDetailViewController else { return }
+            guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
+            destinationViewController.photoController = photoController
+            destinationViewController.photo = photoController.photos[indexPath.item]
+            destinationViewController.themeHelper = themeHelper
+        case "selectThemeModalSegue":
+            guard let destinationViewController = segue.destination as? ThemeSelectionViewController else { return }
+            destinationViewController.themeHelper = themeHelper
+        default:
+            break
+        }
     }
-    */
-
+    
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
