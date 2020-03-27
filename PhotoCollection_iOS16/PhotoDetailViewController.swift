@@ -28,7 +28,16 @@ class PhotoDetailViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        guard let image = imageView.image,
+            let imageData = image.pngData(),
+            let title = textField.text else { return }
         
+        if let photo = photo {
+            photoController?.update(photo: photo, imageData: photo.imageData, title: photo.title)
+        } else {
+            photoController?.create(imageData: imageData, title: title)
+        }
+        navigationController?.popViewController(animated: true)
     }
     
     func updateViews() {
