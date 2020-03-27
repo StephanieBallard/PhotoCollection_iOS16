@@ -15,6 +15,7 @@ class PhotosCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setTheme()
     }
 
     /*
@@ -58,4 +59,4 @@ class PhotosCollectionViewController: UICollectionViewController {
     }
 }
 
-// TODO: Segues
+

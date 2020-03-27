@@ -19,6 +19,7 @@ class PhotoDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setTheme()
+        updateViews()
         
         // Do any additional setup after loading the view.
     }
@@ -27,6 +28,16 @@ class PhotoDetailViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    func updateViews() {
+        // create an update views function that takes the property values of the photo object, if it isn't nil
+        guard let photo = photo else { return }
+        // sets them in the appropriate UI element, use the UIImage(data: Data) init to convert the photo's imageData to a UIImage
+        imageView.image = UIImage(data: photo.imageData)
+        textField.text = photo.title
+        self.title = photo.title
     }
     
     func setTheme() {
