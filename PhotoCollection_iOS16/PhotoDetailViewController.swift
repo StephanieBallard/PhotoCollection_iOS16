@@ -18,7 +18,8 @@ class PhotoDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setTheme()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -28,14 +29,30 @@ class PhotoDetailViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setTheme() {
+        guard let themePreference = themeHelper?.themePreference else { return }
+        var backgroundColor: UIColor!
+        
+        switch themePreference {
+        case "Dark":
+            backgroundColor = .darkGray
+        case "Pink":
+            backgroundColor = .systemPink
+        default:
+            break
+        }
+        
+        view.backgroundColor = backgroundColor
     }
-    */
-
 }
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
